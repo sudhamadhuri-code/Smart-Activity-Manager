@@ -1,0 +1,31 @@
+.container {
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+button {
+  padding: 8px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.card {
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 10px 0;
+
+  height: 300px;              /* fixed height */
+  display: flex;
+  flex-direction: column;
+}
+.card p {
+  overflow-y: auto;
+}
