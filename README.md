@@ -105,61 +105,78 @@ export OPENROUTER_API_KEY=your_key_here
 For official access, please contact via email.
 
 ------------------------------------------------------------------------
+# 🛠️ Setup Instructions
 
-## 🧩 Setup Instructions
+---
 
-### 1️⃣ Prerequisites
+# ✅ OPTION 1: Using Git Clone (Recommended)
 
--   Java 17 or above
--   Node.js (v16 or above recommended)
--   MongoDB (Local or MongoDB Atlas)
--   Maven
+## 1️⃣ Prerequisites
 
-------------------------------------------------------------------------
+Make sure you have installed:
 
-### 2️⃣ Clone the Repository
+* Java 17 or above
+* Node.js (v16 or above recommended)
+* Maven
+* MongoDB (Local installation or MongoDB Atlas)
+* Git
 
-``` bash
+---
+
+## 2️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/sudhamadhuri-code/Smart-Activity-Manager.git
 cd Smart-Activity-Manager
 ```
 
-------------------------------------------------------------------------
+---
 
-### 3️⃣ Backend Setup
+## 3️⃣ Backend Setup
 
-``` bash
+Navigate to backend folder:
+
+```bash
 cd Backend
 ```
 
-Edit:
+Open:
 
-    src/main/resources/application.properties
-
-Configure:
-
-``` properties
-spring.data.mongodb.uri=mongodb://localhost:27017/activitydb
-server.port=8881
+```
+src/main/resources/application.properties
 ```
 
-Run backend:
+Configure MongoDB:
 
-``` bash
+```properties
+spring.data.mongodb.uri=mongodb://localhost:27017/activitydb
+```
+
+Add your OpenRouter API key:
+
+```properties
+openrouter.api.key=YOUR_API_KEY_HERE
+```
+
+Run the backend:
+
+```bash
 mvn spring-boot:run
 ```
 
 Backend runs at:
 
-    http://localhost:8881
+```
+http://localhost:8881
+```
 
-------------------------------------------------------------------------
+---
 
-### 4️⃣ Frontend Setup
+## 4️⃣ Frontend Setup
 
-Open new terminal:
+Open a new terminal:
 
-``` bash
+```bash
 cd Frontend
 npm install
 npm run dev
@@ -167,24 +184,100 @@ npm run dev
 
 Frontend runs at:
 
-    http://localhost:5173
+```
+http://localhost:5173
+```
 
-------------------------------------------------------------------------
+---
 
-### 5️⃣ Access the Application
+# ✅ OPTION 2: Using Download ZIP
 
-Open in browser:
+## 1️⃣ Prerequisites
 
-    http://localhost:5173
+Make sure you have installed:
 
-Make sure backend is running at:
+* Java 17 or above
+* Node.js (v16 or above recommended)
+* Maven
+* MongoDB (Local installation or MongoDB Atlas)
 
-    http://localhost:8881
+---
 
-------------------------------------------------------------------------
+## 2️⃣ Download the Project
+
+1. Open the GitHub repository
+2. Click **Code**
+3. Click **Download ZIP**
+4. Extract the ZIP file
+
+---
+
+## 3️⃣ Backend Setup
+
+Open terminal inside extracted project folder:
+
+```bash
+cd Backend
+```
+
+Edit:
+
+```
+src/main/resources/application.properties
+```
+
+Add your configuration:
+
+```properties
+spring.data.mongodb.uri=mongodb://localhost:27017/activitydb
+openrouter.api.key=YOUR_API_KEY_HERE
+```
+
+Run backend:
+
+```bash
+mvn spring-boot:run
+```
+
+Backend runs at:
+
+```
+http://localhost:8881
+```
+
+---
+
+## 4️⃣ Frontend Setup
+
+Open a new terminal:
+
+```bash
+cd Frontend
+npm install
+npm run dev
+```
+
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 📄 Notes
+
+* Replace `YOUR_API_KEY_HERE` with your own OpenRouter API key.
+* Make sure MongoDB service is running before starting the backend.
+* Backend must be running before starting the frontend.
+
+---
+
+
 
 ## 📬 Contact
 
 For API access or project inquiries:
 
 📧 k.sudhamadhuri26@gmail.com
+
