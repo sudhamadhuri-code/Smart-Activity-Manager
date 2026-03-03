@@ -109,7 +109,8 @@ For official access, please contact via email.
 ### 2️⃣ Clone the Repository
 
 git clone
-https://github.com/sudhamadhuri-code/Smart-Activity-Manager.git\
+https://github.com/sudhamadhuri-code/Smart-Activity-Manager.git
+
 cd Smart-Activity-Manager
 
 ------------------------------------------------------------------------
