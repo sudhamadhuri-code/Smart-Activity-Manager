@@ -13,14 +13,14 @@ Email: k.sudhamadhuri26@gmail.com
 
 ## 🔗 GitHub Repository
 
-https://github.com/sudhamadhuri-code/Smart-Activity-Manager.git
+👉 https://github.com/sudhamadhuri-code/Smart-Activity-Manager
 
 ------------------------------------------------------------------------
 
 ## 📌 Project Overview
 
 Smart Activity Manager is a full-stack web application designed to
-manage daily activities efficiently with AI-powered content suggestions.
+manage activities efficiently with AI-powered content suggestions.
 
 The system demonstrates integration between frontend, backend, database,
 and external AI services using RESTful architecture.
@@ -32,7 +32,7 @@ and external AI services using RESTful architecture.
 -   User Registration and Login
 -   Create, Update, and Delete Activities
 -   Activity Status and Priority Management
--   AI-Based Content Suggestion
+-   AI-Based Content Suggestions
 -   RESTful API Communication
 
 ------------------------------------------------------------------------
@@ -58,39 +58,50 @@ and external AI services using RESTful architecture.
 
 ### AI Integration
 
--   OpenRouter API (Chat Completions)
+-   OpenRouter API (Chat Completions API)
 
 ------------------------------------------------------------------------
 
 ## 🏗 System Architecture
 
-React (Frontend)\
-↓\
-Spring Boot REST APIs\
-↓\
-MongoDB Database
+    React (Frontend)
+            ↓
+    Spring Boot REST APIs
+            ↓
+    MongoDB Database
 
-Spring Boot → OpenRouter API (AI Suggestions)
+    Spring Boot → OpenRouter API (AI Suggestions)
 
 ------------------------------------------------------------------------
 
 ## 🔐 Security Notice
 
-The OpenRouter API key has been disabled for security purposes and it is
-not included in this repository.
+The OpenRouter API key has been removed for security reasons and is
+**not included** in this repository.
 
 To enable AI features:
 
-1.  Add your own API key in `application.properties`
-2.  Configure: openrouter.api.key=${OPENROUTER_API_KEY}
+1.  Add your API key in `application.properties`:
 
- Set environment variable:
+``` properties
+openrouter.api.key=${OPENROUTER_API_KEY}
+```
 
-Windows: set OPENROUTER_API_KEY=your_key_here
+2.  Set the environment variable:
 
-Mac/Linux: export OPENROUTER_API_KEY=your_key_here
+**Windows (CMD):**
 
-   
+``` bash
+set OPENROUTER_API_KEY=your_key_here
+```
+
+**Mac/Linux:**
+
+``` bash
+export OPENROUTER_API_KEY=your_key_here
+```
+
+
 For official access, please contact via email.
 
 ------------------------------------------------------------------------
@@ -108,33 +119,39 @@ For official access, please contact via email.
 
 ### 2️⃣ Clone the Repository
 
-git clone
-https://github.com/sudhamadhuri-code/Smart-Activity-Manager.git
-
+``` bash
+git clone https://github.com/sudhamadhuri-code/Smart-Activity-Manager.git
 cd Smart-Activity-Manager
+```
 
 ------------------------------------------------------------------------
 
 ### 3️⃣ Backend Setup
 
+``` bash
 cd Backend
+```
 
 Edit:
 
-src/main/resources/application.properties
+    src/main/resources/application.properties
 
 Configure:
 
-spring.data.mongodb.uri=mongodb://localhost:27017/activitydb\
+``` properties
+spring.data.mongodb.uri=mongodb://localhost:27017/activitydb
 server.port=8881
+```
 
 Run backend:
 
+``` bash
 mvn spring-boot:run
+```
 
 Backend runs at:
 
-http://localhost:8881
+    http://localhost:8881
 
 ------------------------------------------------------------------------
 
@@ -142,26 +159,27 @@ http://localhost:8881
 
 Open new terminal:
 
-cd Frontend\
-npm install\
+``` bash
+cd Frontend
+npm install
 npm run dev
+```
 
 Frontend runs at:
 
-http://localhost:5173
+    http://localhost:5173
 
 ------------------------------------------------------------------------
 
 ### 5️⃣ Access the Application
 
-Open browser:
+Open in browser:
 
-http://localhost:5173
+    http://localhost:5173
 
-Make sure backend is running on:
+Make sure backend is running at:
 
-http://localhost:8881
-
+    http://localhost:8881
 
 ------------------------------------------------------------------------
 
@@ -169,4 +187,4 @@ http://localhost:8881
 
 For API access or project inquiries:
 
-Email: k.sudhamadhuri26@gmail.com
+📧 k.sudhamadhuri26@gmail.com
