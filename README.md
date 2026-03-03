@@ -13,7 +13,7 @@ Email: k.sudhamadhuri26@gmail.com
 
 ## 🔗 GitHub Repository
 
-https://github.com/sudhamadhuri-code/Blog-Suggestions-SpringBoot.git
+https://github.com/sudhamadhuri-code/Smart-Activity-Manager.git
 
 ------------------------------------------------------------------------
 
