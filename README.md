@@ -61,27 +61,35 @@ and external AI services using RESTful architecture.
 -   OpenRouter API (Chat Completions)
 
 ------------------------------------------------------------------------
+
 ## 🏗 System Architecture
 
-    React (Frontend)
-            ↓
-    Spring Boot REST APIs
-            ↓
-    MongoDB Database
+React (Frontend)\
+↓\
+Spring Boot REST APIs\
+↓\
+MongoDB Database
 
-    Spring Boot → OpenRouter API (AI Suggestions)
+Spring Boot → OpenRouter API (AI Suggestions)
 
 ------------------------------------------------------------------------
 
 ## 🔐 Security Notice
 
-The OpenRouter API key has been disabled for security purposes and is
+The OpenRouter API key has been disabled for security purposes and it is
 not included in this repository.
 
 To enable AI features:
 
 1.  Add your own API key in `application.properties`
 2.  Configure: openrouter.api.key=${OPENROUTER_API_KEY}
+
+ Set environment variable:
+
+Windows: set OPENROUTER_API_KEY=your_key_here
+
+Mac/Linux: export OPENROUTER_API_KEY=your_key_here
+
    
 For official access, please contact via email.
 
@@ -90,8 +98,6 @@ For official access, please contact via email.
 ## 🧩 Setup Instructions
 
 ### 1️⃣ Prerequisites
-
-Make sure the following are installed:
 
 -   Java 17 or above
 -   Node.js (v16 or above recommended)
@@ -102,34 +108,32 @@ Make sure the following are installed:
 
 ### 2️⃣ Clone the Repository
 
-    git clone https://github.com/sudhamadhuri-code/Smart-Activity-Manager.git
-    cd Smart-Activity-Manager
+git clone
+https://github.com/sudhamadhuri-code/Smart-Activity-Manager.git\
+cd Smart-Activity-Manager
 
 ------------------------------------------------------------------------
 
 ### 3️⃣ Backend Setup
 
-Navigate to Backend folder:
-
-    cd Backend
+cd Backend
 
 Edit:
 
-    src/main/resources/application.properties
+src/main/resources/application.properties
 
 Configure:
 
-    spring.data.mongodb.uri=mongodb://localhost:27017/activitydb
-    server.port=8881
-    openrouter.api.key=YOUR_API_KEY
+spring.data.mongodb.uri=mongodb://localhost:27017/activitydb\
+server.port=8881
 
 Run backend:
 
-    mvn spring-boot:run
+mvn spring-boot:run
 
 Backend runs at:
 
-    http://localhost:8881
+http://localhost:8881
 
 ------------------------------------------------------------------------
 
@@ -137,25 +141,26 @@ Backend runs at:
 
 Open new terminal:
 
-    cd Frontend
-    npm install
-    npm run dev
+cd Frontend\
+npm install\
+npm run dev
 
 Frontend runs at:
 
-    http://localhost:5173
+http://localhost:5173
 
 ------------------------------------------------------------------------
 
 ### 5️⃣ Access the Application
 
-Open browser and go to:
+Open browser:
 
-    http://localhost:5173
+http://localhost:5173
 
 Make sure backend is running on:
 
-    http://localhost:8881
+http://localhost:8881
+
 
 ------------------------------------------------------------------------
 
@@ -163,4 +168,4 @@ Make sure backend is running on:
 
 For API access or project inquiries:
 
-**Email:** k.sudhamadhuri26@gmail.com
+Email: k.sudhamadhuri26@gmail.com
