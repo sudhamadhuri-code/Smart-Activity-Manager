@@ -102,7 +102,7 @@ Make sure the following are installed:
 
 ### 2️⃣ Clone the Repository
 
-    git clone https://github.com/sudhamadhuri-code/Smart-Activity-Manager
+    git clone https://github.com/sudhamadhuri-code/Smart-Activity-Manager.git
     cd Smart-Activity-Manager
 
 ------------------------------------------------------------------------
